@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/springboot_02" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/demo04_maven/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_01/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_02/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_03/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_04/pom.xml" />
+        <option value="$PROJECT_DIR$/sprinboot_05/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectKey">
+    <option name="state" value="project://63537948-39a4-48a0-9c97-34259a0fa913" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

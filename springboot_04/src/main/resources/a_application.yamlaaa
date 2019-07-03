@@ -1,0 +1,20 @@
+# 常量
+name: abc
+
+# 数组
+arr:
+  - 张三
+  - 李四
+  - 王五
+
+# yaml 分层操作
+# server 下面 有2个 层级   dev 和 prod
+# dev 下面 有2个属性  url 和 name
+server:
+  dev:
+    url: www.baidu.com
+    name: mayun
+  prod:
+    url: xxx
+    name: xxx
+        

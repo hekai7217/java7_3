@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<span th:text="${msg}"></span>
+<form action="/save" method="post">
+
+    <input type="text" th:value="${name}">
+
+    <button type="submit" value="提交"></button>
+
+</form>
+
+<hr>
+<!--          字符判断的的操作-->
+<span th:text="${#strings.isEmpty(key)}">key没有</span>
+<!--          msg 的长度 -->
+<span th:text="${#strings.length(msg)}"></span>
+<!--          msg 转成大写 -->
+<span th:text="${#strings.toUpperCase(msg)}"></span>
+<!--          截取操作 -->
+<span th:text="${#strings.substring(msg,3)}"></span>
+
+<hr>
+<span th:text="${#dates.format(date)}"></span> <br>
+<span th:text="${#dates.format(date,'yyyy/MM/dd')}"></span> <br>
+<span th:text="${#dates.month(date)}"></span> <br>
+
+<hr>
+username:<span th:text="${user.username}"></span> <br>
+password:<span th:text="${user.password}"></span>
+<hr>
+
+<table border="1">
+    <tr>
+        <td>姓名</td>
+        <td>密码</td>
+    </tr>
+    <tr th:each="u : ${list}">
+        <td th:text="${u.username}"></td>
+        <td th:text="${u.password}"></td>
+    </tr>
+</table>
+
+<hr>
+
+<table border="1">
+
+    <tr>
+        <td>姓名</td>
+        <td>密码</td>
+    </tr>
+<!--    先遍历  map 拿到 entry -->
+    <tr th:each="maps : ${map}">
+<!--        遍历 entry
+            entry.value 拿到 map中的 value是这个对象
+            通过 对象 拿到  对象的 username 和 password
+ -->
+        <td th:each="entry:${maps}" th:text="${entry.value.username}"></td>
+        <td th:each="entry:${maps}" th:text="${entry.value.password}"></td>
+    </tr>
+
+    </table>
+</body>
+</html>

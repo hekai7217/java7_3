@@ -1,0 +1,6 @@
+# applicationContext.xml + springmvc.xml \u6574\u5408
+# \u914D\u7F6E\u670D\u52A1\u5668\u7AEF\u53E3
+# key = value \u7684\u914D\u7F6E\u65B9\u5F0F
+server.port=8808
+
+
