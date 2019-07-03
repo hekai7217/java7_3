@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: ssm
+
+  # \u6570\u636E\u5E93 \u8D44\u6E90\u914D\u7F6E
+  datasource:
+    username: root
+    password: root
+    # zeroDateTimeBehavior=convertToNull \u89E3\u51B3\u65F6\u533A\u95EE\u9898
+    url: jdbc:mysql://localhost:3306/mybatis?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&autoReconnect=true
+    continue-on-error: true
+    sql-script-encoding: UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    # \u6570\u636E\u5E93\u8FDE\u63A5\u6C60\u521D\u59CB\u5316\u7684\u914D\u7F6E
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      # \u95F4\u9694\u591A\u4E45\u8FDB\u884C\u4E00\u6B21\u68C0\u6D4B\uFF0C\u68C0\u6D4B\u9700\u8981\u5173\u95ED\u7684\u7A7A\u95F2\u8FDE\u63A5
+      time-between-eviction-runs-millis: 60000
+      # \u4E00\u4E2A\u8FDE\u63A5\u5728\u6C60\u4E2D\u6700\u5C0F\u751F\u5B58\u7684\u65F6\u95F4
+      min-evictable-idle-time-millis: 300000
+
+mybatis:
+  type-aliases-package: com.lx.springboot_ssm.bean.*  # \u522B\u540D
+  configuration:
+    map-underscore-to-camel-case: true
+    # \u6253\u5370sql, \u65B9\u4FBF\u8C03\u8BD5
+    use-generated-keys: true
+    default-statement-timeout: 60
+    default-fetch-size: 100
