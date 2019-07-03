@@ -6,9 +6,22 @@
 </head>
 <body>
 
-   req: <span th:text="${req}}"></span> <br>
-   session: <span th:text="session.key"></span> <br>
-   application: <span th:text="application.app"></span> <br>
+   req: <span th:text="${req}"></span> <br>
+   session: <span th:text="${session.key}"></span> <br>
+   application: <span th:text="${application.app}"></span> <br>
+
+   <hr>
+   url 的显示:  @{} <br>
+   <a th:href=" @{http://www.baidu.com}">百度</a> <br>
+   <a th:href=" @{/demo01.html}">相对路径</a> <br>
+   <a th:href=" @{/hello}">hello</a> <br>
+
+
+   <a   th:href=" @{/demo02(id=1,name=zhangsan)}">url传递参数 </a> <br>
+
+   <a th:href=" @{/demo03/{id}/{name}(id=1,name=aaa)}">url传递参数-result</a> <br>
+
+
 
 </body>
 </html>

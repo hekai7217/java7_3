@@ -1,7 +1,9 @@
 package com.lx.sprinboot_05.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -18,6 +20,22 @@ public class Demo02Controller {
 
         return "index02";
 
+    }
+
+    @RequestMapping("/demo02")
+    public String getDemo02(@RequestParam("id")String id,@RequestParam("name")String name){
+
+        System.out.println("id - > " + id );
+        System.out.println("name - > " + name );
+        return "index02";
+
+    }
+
+    @RequestMapping("/demo03/{id}/{name}")
+    public String getDemo03(@PathVariable("id") String id,@PathVariable("name")String name){
+        System.out.println("id - > " + id );
+        System.out.println("name - > " + name );
+        return "index02";
     }
 
 }
