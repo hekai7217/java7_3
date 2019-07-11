@@ -7,11 +7,17 @@
       <module fileurl="file://$PROJECT_DIR$/demo03_web/demo03_web.iml" filepath="$PROJECT_DIR$/demo03_web/demo03_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo04_maven/demo04_maven.iml" filepath="$PROJECT_DIR$/demo04_maven/demo04_maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/idea.iml" filepath="$PROJECT_DIR$/idea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_test01/mybatis_test01.iml" filepath="$PROJECT_DIR$/mybatis_test01/mybatis_test01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisjava/redisjava.iml" filepath="$PROJECT_DIR$/redisjava/redisjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro_hello/shiro_hello.iml" filepath="$PROJECT_DIR$/shiro_hello/shiro_hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/sprinboot_05/sprinboot_05.iml" filepath="$PROJECT_DIR$/sprinboot_05/sprinboot_05.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_01/springboot_01.iml" filepath="$PROJECT_DIR$/springboot_01/springboot_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_02/springboot_02.iml" filepath="$PROJECT_DIR$/springboot_02/springboot_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_03/springboot_03.iml" filepath="$PROJECT_DIR$/springboot_03/springboot_03.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_04/springboot_04.iml" filepath="$PROJECT_DIR$/springboot_04/springboot_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_ssm/springboot_ssm.iml" filepath="$PROJECT_DIR$/springboot_ssm/springboot_ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_stu_consumer/springboot_stu_consumer.iml" filepath="$PROJECT_DIR$/springboot_stu_consumer/springboot_stu_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_stu_producer/springboot_stu_producer.iml" filepath="$PROJECT_DIR$/springboot_stu_producer/springboot_stu_producer.iml" />
     </modules>
   </component>
 </project>
